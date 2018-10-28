@@ -1,9 +1,9 @@
 # This Kaggle code is to predict Gstore product revenues 
 
-##### Links : https://www.kaggle.com/c/house-prices-advanced-regression-techniques
+##### Links : https://www.kaggle.com/c/ga-customer-revenue-prediction
 
 #### Reference 
-- https://www.kaggle.com/mjbahmani/a-comprehensive-ml-workflow-for-house-prices/notebook
+- 
 
 
 # Example of data science project structure 
@@ -55,28 +55,22 @@
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 ```
 
-# Understand each variable : 
-This section is look at each variable <br/>
-and do a philosophical analysis about their meaning and importance for this problem.
-
-1. Variable name : 
-Just variable name 
-2. Type : 
-Identification of the variables' type. There are two possible values for this field: 'numerical' or 'categorical'
-3. Segment :
- Identification of the variables' segment. We can define three possible segments: building, space or location. 
- When we say 'building', we mean a variable that relates to the physical characteristics of the building 
- (e.g. 'OverallQual'). When we say 'space', we mean a variable that reports space properties of the house 
- (e.g. 'TotalBsmtSF'). Finally, when we say a 'location', we mean a variable that gives information about the place 
- where the house is located (e.g. 'Neighborhood').
- Summary : this point help us to group describe variables. 
-4. Expectation :
-Our expectation about the variable influence in 'SalePrice'. We can use a categorical scale with 'High', 
-'Medium' and 'Low' as possible values. 
-5. Conclusion
+# Data Fields
+- `fullVisitorId`- A unique identifier for each user of the Google Merchandise Store.
+- `channelGrouping` - The channel via which the user came to the Store.
+- `date` - The date on which the user visited the Store.
+- `device` - The specifications for the device used to access the Store.
+- `geoNetwork` - This section contains information about the geography of the user.
+- `sessionId` - A unique identifier for this visit to the store.
+- `socialEngagementType` - Engagement type, either "Socially Engaged" or "Not Socially Engaged".
+- `totals` - This section contains aggregate values across the session.
+- `trafficSource` - This section contains information about the Traffic Source from which the session originated.
+- `visitId` - An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId.
+- `visitNumber` - The session number for this user. If this is the first session, then this is set to 1.
+- `visitStartTime` - The timestamp (expressed as POSIX time).
 
 
-# Visulazation : plots instead of boxplots,
+# Visualization : plots instead of boxplots,
  
  
 # Missing values : Ask you this question 
@@ -175,13 +169,3 @@ Data Preprocessing is a technique that is used to convert the raw data into a cl
 
 # Data cleaning 
 These include missing value imputation, outliers detection, transformations, integrity constraints violations detection and repair, consistent query answering, deduplication, and many other related problems such as profiling and constraints mining
-
-
-
-
-
-
-
-
-
-
